@@ -16,8 +16,8 @@ import LandingFooter from "@/components/landing/LandingFooter";
 const Index = () => (
   <main>
     <LandingNavbar />
-    {/* Spacer for fixed nav */}
-    <div className="h-[88px]" />
+    {/* Spacer for fixed nav with marquee */}
+    <div className="h-[105px] lg:h-[120px]" />
     <LandingHero />
     <QuickCategories />
     <PromoBanner />
