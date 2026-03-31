@@ -47,7 +47,7 @@ const ProductCard = ({ product, index }: ProductCardProps) => {
       className="group bg-card rounded-2xl border border-border overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col"
     >
       {/* Image area */}
-      <div className="relative aspect-[3/4] overflow-hidden bg-muted">
+      <Link to={`/product/${product.id}`} className="relative aspect-[3/4] overflow-hidden bg-muted block">
         <img
           src={product.image}
           alt={product.name}
