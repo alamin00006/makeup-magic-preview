@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import ProductCard from "./ProductCard";
 import type { Product } from "./productData";
 
@@ -29,9 +30,9 @@ const ProductGrid = ({ id, title, subtitle, products, bgClass = "bg-background" 
             <p className="font-body text-xs text-muted-foreground mt-0.5">{subtitle}</p>
           )}
         </motion.div>
-        <button className="font-body text-xs text-pink hover:text-hot-pink font-medium uppercase tracking-wider transition-colors">
+        <Link to="/products" className="font-body text-xs text-pink hover:text-hot-pink font-medium uppercase tracking-wider transition-colors">
           View All →
-        </button>
+        </Link>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5">

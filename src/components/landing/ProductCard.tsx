@@ -3,6 +3,7 @@ import { Heart, Star, ShoppingBag, Check } from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, selectCartItems } from "@/store/cartSlice";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import type { Product } from "./productData";
 
 interface ProductCardProps {
@@ -43,10 +44,10 @@ const ProductCard = ({ product, index }: ProductCardProps) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.05 }}
-      className="group bg-card rounded-2xl border border-border overflow-hidden hover:shadow-xl transition-all duration-300"
+      className="group bg-card rounded-2xl border border-border overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col"
     >
       {/* Image area */}
-      <div className="relative aspect-[3/4] overflow-hidden bg-muted">
+      <Link to={`/product/${product.id}`} className="relative aspect-[3/4] overflow-hidden bg-muted block">
         <img
           src={product.image}
           alt={product.name}
@@ -103,7 +104,7 @@ const ProductCard = ({ product, index }: ProductCardProps) => {
             )}
           </button>
         </div>
-      </div>
+      </Link>
 
       {/* Info area */}
       <div className="p-4">
