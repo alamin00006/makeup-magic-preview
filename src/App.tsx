@@ -13,6 +13,8 @@ import Login from "./pages/Login.tsx";
 import Payment from "./pages/Payment.tsx";
 import Profile from "./pages/Profile.tsx";
 import Videos from "./pages/Videos.tsx";
+import Products from "./pages/Products.tsx";
+import ProductDetail from "./pages/ProductDetail.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
