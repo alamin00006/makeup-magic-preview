@@ -44,7 +44,7 @@ const ProductCard = ({ product, index }: ProductCardProps) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.05 }}
-      className="group bg-card rounded-2xl border border-border overflow-hidden hover:shadow-xl transition-all duration-300"
+      className="group bg-card rounded-2xl border border-border overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col"
     >
       {/* Image area */}
       <div className="relative aspect-[3/4] overflow-hidden bg-muted">
