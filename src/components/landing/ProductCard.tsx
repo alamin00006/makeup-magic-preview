@@ -3,6 +3,7 @@ import { Heart, Star, ShoppingBag, Check } from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, selectCartItems } from "@/store/cartSlice";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import type { Product } from "./productData";
 
 interface ProductCardProps {
