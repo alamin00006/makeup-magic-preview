@@ -88,7 +88,7 @@ const CartDrawer = () => {
                       <div className="flex-1 min-w-0">
                         <p className="font-body text-[10px] text-muted-foreground uppercase tracking-wider">{item.brand}</p>
                         <h4 className="font-body text-sm text-foreground font-medium leading-tight truncate">{item.name}</h4>
-                        <p className="font-body text-[11px] text-muted-foreground">{item.nameBn}</p>
+                        
 
                         <div className="flex items-center justify-between mt-2">
                           <div className="flex items-center gap-0 border border-border rounded-lg overflow-hidden">
