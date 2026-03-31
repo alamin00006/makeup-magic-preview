@@ -25,7 +25,7 @@ const Index = () => (
     <ProductGrid
       id="new-arrivals"
       title="Back In Stock"
-      titleBn="আবার স্টকে এসেছে"
+      subtitle="Restocked favorites you love"
       products={allProducts.slice(0, 4)}
       bgClass="bg-background"
     />
@@ -33,7 +33,7 @@ const Index = () => (
     <ProductGrid
       id="best-sellers"
       title="Best Sellers"
-      titleBn="সেরা বিক্রিত পণ্য"
+      subtitle="Top picks loved by thousands"
       products={allProducts.slice(2, 6)}
       bgClass="bg-background"
     />
@@ -41,7 +41,7 @@ const Index = () => (
     <BrandsOnBoard />
     <ProductGrid
       title="Flying Off The Shelves"
-      titleBn="দ্রুত বিক্রি হচ্ছে"
+      subtitle="Grab them before they're gone"
       products={allProducts.slice(4, 8)}
       bgClass="bg-card"
     />
