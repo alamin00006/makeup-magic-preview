@@ -1,30 +1,55 @@
-import HeroSection from "@/components/HeroSection";
-import CategorySection from "@/components/CategorySection";
-import ServicesGrid from "@/components/ServicesGrid";
-import TrendingBanner from "@/components/TrendingBanner";
-import CoursesSection from "@/components/CoursesSection";
-import FoundationBanner from "@/components/FoundationBanner";
-import FeaturesSection from "@/components/FeaturesSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import PricingSection from "@/components/PricingSection";
-import StatsSection from "@/components/StatsSection";
-import FooterSection from "@/components/FooterSection";
-import Navbar from "@/components/Navbar";
+import LandingNavbar from "@/components/landing/LandingNavbar";
+import LandingHero from "@/components/landing/LandingHero";
+import QuickCategories from "@/components/landing/QuickCategories";
+import PromoBanner from "@/components/landing/PromoBanner";
+import ShopByCategory from "@/components/landing/ShopByCategory";
+import ProductGrid, { allProducts } from "@/components/landing/ProductGrid";
+import TrendsBanner from "@/components/landing/TrendsBanner";
+import FoundationBanner from "@/components/landing/FoundationBanner";
+import BrandsOnBoard from "@/components/landing/BrandsOnBoard";
+import OffersSection from "@/components/landing/OffersSection";
+import LandingTestimonials from "@/components/landing/LandingTestimonials";
+import BrandCTA from "@/components/landing/BrandCTA";
+import StatsBar from "@/components/landing/StatsBar";
+import LandingFooter from "@/components/landing/LandingFooter";
 
 const Index = () => (
   <main>
-    <Navbar />
-    <HeroSection />
-    <CategorySection />
-    <ServicesGrid />
-    <TrendingBanner />
-    <CoursesSection />
+    <LandingNavbar />
+    {/* Spacer for fixed nav */}
+    <div className="h-[88px]" />
+    <LandingHero />
+    <QuickCategories />
+    <PromoBanner />
+    <ShopByCategory />
+    <ProductGrid
+      id="new-arrivals"
+      title="Back In Stock"
+      titleBn="আবার স্টকে এসেছে"
+      products={allProducts.slice(0, 4)}
+      bgClass="bg-background"
+    />
+    <TrendsBanner />
+    <ProductGrid
+      id="best-sellers"
+      title="Best Sellers"
+      titleBn="সেরা বিক্রিত পণ্য"
+      products={allProducts.slice(2, 6)}
+      bgClass="bg-background"
+    />
     <FoundationBanner />
-    <FeaturesSection />
-    <TestimonialsSection />
-    <PricingSection />
-    <StatsSection />
-    <FooterSection />
+    <BrandsOnBoard />
+    <ProductGrid
+      title="Flying Off The Shelves"
+      titleBn="দ্রুত বিক্রি হচ্ছে"
+      products={allProducts.slice(4, 8)}
+      bgClass="bg-card"
+    />
+    <OffersSection />
+    <LandingTestimonials />
+    <BrandCTA />
+    <StatsBar />
+    <LandingFooter />
   </main>
 );
 
