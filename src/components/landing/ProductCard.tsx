@@ -104,7 +104,7 @@ const ProductCard = ({ product, index }: ProductCardProps) => {
             )}
           </button>
         </div>
-      </div>
+      </Link>
 
       {/* Info area */}
       <div className="p-4">
