@@ -11,6 +11,7 @@ import Index from "./pages/Index.tsx";
 import Details from "./pages/Details.tsx";
 import Login from "./pages/Login.tsx";
 import Payment from "./pages/Payment.tsx";
+import Checkout from "./pages/Checkout.tsx";
 import Profile from "./pages/Profile.tsx";
 import Videos from "./pages/Videos.tsx";
 import Products from "./pages/Products.tsx";
