@@ -139,7 +139,7 @@ const CartDrawer = () => {
                   Shipping calculated at checkout
                 </p>
                 <Link
-                  to="/payment?course=recorded"
+                  to="/checkout"
                   onClick={() => dispatch(closeCart())}
                   className="block w-full py-3 bg-pink text-primary-foreground font-body font-semibold text-sm uppercase tracking-wider rounded-xl text-center hover:bg-hot-pink transition-colors"
                 >
