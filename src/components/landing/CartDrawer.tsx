@@ -88,7 +88,15 @@ const CartDrawer = () => {
                       <div className="flex-1 min-w-0">
                         <p className="font-body text-[10px] text-muted-foreground uppercase tracking-wider">{item.brand}</p>
                         <h4 className="font-body text-sm text-foreground font-medium leading-tight truncate">{item.name}</h4>
-                        
+                        {item.color && (
+                          <div className="flex items-center gap-1.5 mt-1">
+                            <span
+                              className="w-4 h-4 rounded-full border border-border inline-block"
+                              style={{ backgroundColor: item.color }}
+                            />
+                            <span className="font-body text-[10px] text-muted-foreground">{item.color}</span>
+                          </div>
+                        )}
 
                         <div className="flex items-center justify-between mt-2">
                           <div className="flex items-center gap-0 border border-border rounded-lg overflow-hidden">
