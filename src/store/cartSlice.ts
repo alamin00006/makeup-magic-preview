@@ -8,6 +8,7 @@ export interface CartItem {
   price: number;
   oldPrice?: number;
   quantity: number;
+  color?: string;
 }
 
 interface CartState {
