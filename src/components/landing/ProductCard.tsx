@@ -20,6 +20,7 @@ const ProductCard = ({ product, index }: ProductCardProps) => {
   const [wishlisted, setWishlisted] = useState(false);
 
   const handleAdd = () => {
+    const colorValue = product.colors && product.colors.length > 0 ? product.colors[selectedColor] : undefined;
     dispatch(
       addToCart({
         id: product.id,
@@ -28,6 +29,7 @@ const ProductCard = ({ product, index }: ProductCardProps) => {
         image: product.image,
         price: product.price,
         oldPrice: product.oldPrice,
+        color: colorValue,
       })
     );
     setJustAdded(true);

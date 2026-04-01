@@ -8,6 +8,7 @@ export interface CartItem {
   price: number;
   oldPrice?: number;
   quantity: number;
+  color?: string;
 }
 
 interface CartState {
@@ -38,7 +39,9 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     addToCart: (state, action: PayloadAction<Omit<CartItem, "quantity">>) => {
-      const existing = state.items.find((i) => i.id === action.payload.id);
+      const existing = state.items.find(
+        (i) => i.id === action.payload.id && i.color === action.payload.color
+      );
       if (existing) {
         existing.quantity += 1;
       } else {
