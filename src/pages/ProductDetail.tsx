@@ -51,6 +51,7 @@ const ProductDetail = () => {
     : 0;
 
   const handleAdd = () => {
+    const colorValue = product.colors && product.colors.length > 0 ? product.colors[selectedColor] : undefined;
     for (let i = 0; i < quantity; i++) {
       dispatch(
         addToCart({
@@ -60,6 +61,7 @@ const ProductDetail = () => {
           image: product.image,
           price: product.price,
           oldPrice: product.oldPrice,
+          color: colorValue,
         })
       );
     }
