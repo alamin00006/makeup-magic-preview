@@ -11,6 +11,7 @@ import Index from "./pages/Index.tsx";
 import Details from "./pages/Details.tsx";
 import Login from "./pages/Login.tsx";
 import Payment from "./pages/Payment.tsx";
+import Checkout from "./pages/Checkout.tsx";
 import Profile from "./pages/Profile.tsx";
 import Videos from "./pages/Videos.tsx";
 import Products from "./pages/Products.tsx";
@@ -33,6 +34,7 @@ const App = () => (
               <Route path="/details" element={<Details />} />
               <Route path="/login" element={<Login />} />
               <Route path="/payment" element={<Payment />} />
+              <Route path="/checkout" element={<Checkout />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/videos" element={<Videos />} />
               <Route path="/products" element={<Products />} />
